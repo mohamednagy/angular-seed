@@ -1,3 +1,18 @@
+<simple-notifications [options]="options"></simple-notifications>
+
 <h1>
   {{title}}
 </h1>
+
+<hr />
+<h2><a href="https://github.com/flauc/angular2-notifications">Simple Notifications</a></h2>
+<button type="button" name="button" (click)="notify()">notify</button>
+
+<hr />
+<h2><a href="https://ng-bootstrap.github.io/#/home">ng-bootstrap</a></h2>
+<p>
+  <ngb-alert *ngIf="showAlert"  [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+<button type="button" name="button" (click)="showAlert = !showAlert">Toggle Alert</button>
